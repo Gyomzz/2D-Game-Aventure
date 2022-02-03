@@ -1,7 +1,7 @@
-package entity;
+package src.entity;
 
-import main.GamePanel;
-import main.KeyHandler;
+import src.main.GamePanel;
+import src.main.KeyHandler;
 
 import java.awt.*;
 import java.io.IOException;

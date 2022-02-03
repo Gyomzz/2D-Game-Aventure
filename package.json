@@ -1,0 +1,23 @@
+{
+  "name": "2d-game-aventure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "javac -d bin/ src/main/Main.java && cp -r res/ bin/",
+    "java": "java -cp bin/ src.main.Main",
+    "game": "npm run compile && npm run java"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gyomzz/2D-Game-Aventure.git"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gyomzz/2D-Game-Aventure/issues"
+  },
+  "homepage": "https://github.com/Gyomzz/2D-Game-Aventure#readme"
+}

@@ -1,10 +1,10 @@
-package main;
+package src.main;
 
 import java.awt.*;
 
 import javax.swing.*;
 
-import entity.Player;
+import src.entity.Player;
 
 public class GamePanel extends JPanel implements Runnable {
 
