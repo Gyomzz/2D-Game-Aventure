@@ -30,6 +30,7 @@ public class GamePanel extends JPanel implements Runnable {
     TileManager tileM = new TileManager(this);
     KeyHandler keyH = new KeyHandler();
     Thread gameThread;
+    public CollisionChecker cChecker = new CollisionChecker(this);
     public Player player = new Player(this, keyH);
 
     
@@ -85,32 +86,6 @@ public class GamePanel extends JPanel implements Runnable {
                 drawCount = 0;
                 timer = 0;
             }
-
-            // sleep version 
-            // 1 UPDATE: 1 update information such as character positions
-            // update();
-
-            // 2 DRAW: draw the screen with the updated information
-            // repaint();
-
-            
-            // try { 
-            //     double remainingTime = nextDrawTime - System.nanoTime();
-            //     remainingTime = remainingTime/1000000;
-
-            //     if(remainingTime < 0) {
-            //         remainingTime = 0;
-            //     }
-
-            //     Thread.sleep((long) remainingTime);
-
-            //     nextDrawTime += drawInterval;
-                
-            // } catch (InterruptedException e) {
-            // e.printStackTrace();
-            // }
-
-            // delta version
 
         }
     }
